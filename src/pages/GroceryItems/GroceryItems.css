@@ -1,0 +1,85 @@
+.items-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.items-container .items-body {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.items-container .items-body .title {
+  font-size: 60px;
+  font-family: "'Inria Serif'";
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.items-container .items-body .add-items {
+  display: flex;
+  justify-content: center;
+}
+
+.items-container .items-body .add-items input {
+  width: 30%;
+  padding: 1%;
+  background-color: #4d4d63;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.items-container .items-body .add-items input::placeholder {
+  opacity: 0.6;
+  color: #fff;
+}
+
+.items-container .items-body .add-items .add-btn {
+  width: 10%;
+  background-color: #13294c;
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "'Inria Serif'";
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.items-container .items-body .items-container-row {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items-container .items-body .items-container-row .item {
+  padding: 0.5% 1%;
+  opacity: 0.6;
+  font-family: "'Inria Serif'";
+  text-align: center;
+  font-size: 24px;
+  background-color: #1a1a2e;
+  border: 1px solid #4d4d63;
+  margin: 1%;
+  border-radius: 5px;
+}
+
+.items-container .items-body .items-container-row .no-items {
+  opacity: 0.6;
+  font-family: "'Inria Serif'";
+  text-align: center;
+  font-size: 24px;
+}
