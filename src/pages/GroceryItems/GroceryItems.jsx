@@ -9,7 +9,6 @@ const GroceryItems = () => {
   const [item, setItem] = useState("");
   const [addedItems, setAddedItems] = useState([]);
   const [loading, setLoading] = useState(false);
-  console.log("function calling");
 
   const tokenExpire = () => {
     localStorage.clear();
@@ -17,7 +16,6 @@ const GroceryItems = () => {
   };
 
   useEffect(() => {
-    console.log("useeffect calling.......");
     fetchData();
   }, []);
 
@@ -33,7 +31,6 @@ const GroceryItems = () => {
       axios
         .get("http://localhost:8000/items/getItems", config)
         .then((response) => {
-          console.log(response);
           if (response.data.success) {
             setAddedItems(response.data.data);
           }
@@ -66,7 +63,6 @@ const GroceryItems = () => {
       axios
         .post("http://localhost:8000/items/addItem", { item }, config)
         .then((response) => {
-          console.log(response);
           if (response.data.success) {
             toast.success(response.data.message);
             setAddedItems([...addedItems, response.data.data]);
@@ -95,7 +91,6 @@ const GroceryItems = () => {
 
   return (
     <div className="items-container">
-      {console.log("redering calling.......")}
       <div className="items-body">
         <div className="title">Groceries Items</div>
         <div className="add-items">
